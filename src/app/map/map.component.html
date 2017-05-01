@@ -1,0 +1,6 @@
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" gestureHandling="auto" mapTypeId="roadmap" mapTypeControl="true" (mapReady)="mapReady($map)">
+  <!--<agm-marker [latitude]="lat" [longitude]="lng" [label]="'M'"></agm-marker>-->
+</agm-map>
+
+<button (click)="geocode()">Home</button>
+<button (click)="resetMarker()">Reset</button>
