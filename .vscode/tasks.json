@@ -5,10 +5,10 @@
     "tasks": [
         {
             "taskName": "serve",
-            "command": "C:\\Users\\Raphael\\AppData\\Local\\Google\\Cloud SDK\\google-cloud-sdk\\platform\\bundledpython\\python.exe",
+            "command": "ng",
             "isShellCommand": false,
             "echoCommand": true,
-            "args": ["C:/Users/Raphael/AppData/Local/Google/Cloud SDK/google-cloud-sdk/platform/google_appengine/dev_appserver.py", "app.yaml", "--php_remote_debugging=yes"],
+            "args": ["serve", "-o"],
             "showOutput": "always"
         },
         {
@@ -24,7 +24,7 @@
             "command": "gcloud.cmd",
             "isShellCommand": false,
             "echoCommand": true,
-            "args": ["app", "browse", "--project=easyrouteplanner"],
+            "args": ["app", "browse", "--project=easyrouteplannerng2"],
             "showOutput": "always"
         }
     ]
