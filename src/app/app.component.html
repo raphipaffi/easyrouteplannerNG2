@@ -1,1 +1,11 @@
-<app-map></app-map>
+<ng-sidebar-container>
+
+    <ng-sidebar position="right" mode="dock" dockedSize="40px" [(opened)]="_opened">
+        <button id="toggleSidebar" type="button" class="btn btn-primary" (click)="_toggleSidebar()">
+            <span class="glyphicon" [ngClass]="{'glyphicon-triangle-left': !_opened, 'glyphicon-triangle-right': _opened}"></span>
+        </button>
+    </ng-sidebar>
+
+    <app-map></app-map>
+
+</ng-sidebar-container>

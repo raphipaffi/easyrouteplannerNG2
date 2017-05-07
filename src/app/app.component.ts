@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  private _opened: boolean = false;
 
+  private _toggleSidebar() {
+    this._opened = !this._opened;
+  }
 }
